@@ -7,6 +7,7 @@
 //
 
 #import "BNRAppDelegate.h"
+#import "BNRExecutor.h"
 
 @implementation BNRAppDelegate
 
@@ -14,6 +15,21 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    int multiplier = 3;
+    
+    BNRExecutor *executor = [[BNRExecutor alloc]init];
+    // Set the block inline
+    [executor setEquation:^int(int x, int y){
+        return multiplier * sum;
+    }];
+    multiplier = 100;
+    
+    // Get a pointer to the main operation queue and add a block to it
+    [[NSOperationQueue mainQueue]addOperation:^void(void){
+        NSLog(@"%d", [executor computeWithValue:2 andValue:5]);
+    }];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

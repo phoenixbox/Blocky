@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB13584A185005E8006300DF /* BNRExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = CB135849185005E8006300DF /* BNRExecutor.m */; };
 		CB70A13D184F819B00579A61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB70A13C184F819B00579A61 /* Foundation.framework */; };
 		CB70A13F184F819B00579A61 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB70A13E184F819B00579A61 /* CoreGraphics.framework */; };
 		CB70A141184F819B00579A61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB70A140184F819B00579A61 /* UIKit.framework */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB135848185005E8006300DF /* BNRExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRExecutor.h; sourceTree = "<group>"; };
+		CB135849185005E8006300DF /* BNRExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRExecutor.m; sourceTree = "<group>"; };
 		CB70A139184F819B00579A61 /* Blocky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB70A13C184F819B00579A61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CB70A13E184F819B00579A61 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -77,6 +80,8 @@
 		CB70A130184F819B00579A61 = {
 			isa = PBXGroup;
 			children = (
+				CB135848185005E8006300DF /* BNRExecutor.h */,
+				CB135849185005E8006300DF /* BNRExecutor.m */,
 				CB70A142184F819B00579A61 /* Blocky */,
 				CB70A15B184F819B00579A61 /* BlockyTests */,
 				CB70A13B184F819B00579A61 /* Frameworks */,
@@ -241,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB70A149184F819B00579A61 /* main.m in Sources */,
+				CB13584A185005E8006300DF /* BNRExecutor.m in Sources */,
 				CB70A14D184F819B00579A61 /* BNRAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +448,7 @@
 				CB70A167184F819B00579A61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB70A168184F819B00579A61 /* Build configuration list for PBXNativeTarget "BlockyTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +457,7 @@
 				CB70A16A184F819B00579A61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
