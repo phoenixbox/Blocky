@@ -21,7 +21,7 @@
     BNRExecutor *executor = [[BNRExecutor alloc]init];
     // Set the block inline
     [executor setEquation:^int(int x, int y){
-        return multiplier * sum;
+        return multiplier * 5;
     }];
     multiplier = 100;
     
